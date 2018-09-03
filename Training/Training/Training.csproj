@@ -1,0 +1,62 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Images\arkaplan.png" />
+    <None Remove="Images\Books\ChildrenImagination.png" />
+    <None Remove="Images\digerVideolarBack.png" />
+    <None Remove="Images\ExerciseReading.png" />
+    <None Remove="Images\ExerciseTest.png" />
+    <None Remove="Images\icon_music.png" />
+    <None Remove="Images\icon_qr.png" />
+    <None Remove="Images\icon_reading.png" />
+    <None Remove="Images\icon_user.png" />
+    <None Remove="Images\videoBaslikBack.png" />
+    <None Remove="Templates\read.html" />
+    <None Remove="Templates\Sample.docx" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Templates\read.html" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Images\Books\ChildrenImagination.png" />
+    <EmbeddedResource Include="Images\ExerciseReading.png" />
+    <EmbeddedResource Include="Images\ExerciseTest.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Images\arkaplan.png" />
+    <EmbeddedResource Include="Images\digerVideolarBack.png" />
+    <EmbeddedResource Include="Images\icon_music.png" />
+    <EmbeddedResource Include="Images\icon_qr.png" />
+    <EmbeddedResource Include="Images\icon_reading.png" />
+    <EmbeddedResource Include="Images\icon_user.png" />
+    <EmbeddedResource Include="Images\videoBaslikBack.png" />
+    <EmbeddedResource Include="Templates\Sample.docx" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="11.0.2" />
+    <PackageReference Include="Octane.Xam.VideoPlayer" Version="2.2.0" />
+    <PackageReference Include="SkiaSharp" Version="1.60.3" />
+    <PackageReference Include="Syncfusion.Xamarin.DocIO" Version="16.2.0.50" />
+    <PackageReference Include="Xam.Plugin.HtmlLabel" Version="3.0.1.6" />
+    <PackageReference Include="Xamarin.Forms" Version="3.2.0.729530-pre2" />
+    <PackageReference Include="ZXing.Net.Mobile" Version="2.4.1" />
+    <PackageReference Include="ZXing.Net.Mobile.Forms" Version="2.4.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="System.Net.Http.Extensions">
+      <HintPath>C:\Users\Nedim\.nuget\packages\microsoft.net.http\2.2.29\lib\net45\System.Net.Http.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Primitives">
+      <HintPath>C:\Users\Nedim\.nuget\packages\microsoft.net.http\2.2.29\lib\net45\System.Net.Http.Primitives.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>
