@@ -107,6 +107,8 @@ class MonoPackageManager_Resources {
 	public static final String[] Assemblies = new String[]{
 		/* We need to ensure that "Training.Android.dll" comes first in this list. */
 		"Training.Android.dll",
+		"Acr.UserDialogs.dll",
+		"AndHUD.dll",
 		"FastAndroidCamera.dll",
 		"FormsViewGroup.dll",
 		"HtmlLabel.Forms.Plugin.dll",
@@ -153,6 +155,8 @@ class MonoPackageManager_Resources {
 		"ZXing.Net.Mobile.Forms.dll",
 		"zxing.portable.dll",
 		"ZXingNetMobile.dll",
+		"Firebase.dll",
+		"System.Reactive.dll",
 	};
 	public static final String[] Dependencies = new String[]{
 	};

@@ -1,3 +1,5 @@
+Acr.UserDialogs
+AndHUD
 FastAndroidCamera
 FormsViewGroup
 HtmlLabel.Forms.Plugin
@@ -9,7 +11,9 @@ Syncfusion.Compression.Portable
 Syncfusion.DocIO.Portable
 Syncfusion.Licensing
 Syncfusion.OfficeChart.Portable
+System.Collections
 System.Runtime
+System.Threading.Tasks
 Training
 Xamarin.Android.Arch.Core.Common
 Xamarin.Android.Arch.Lifecycle.Common
@@ -46,5 +50,8 @@ ZXing.Net.Mobile.Forms
 zxing.portable
 ZXingNetMobile
 netstandard
+Firebase
 System.Resources.ResourceManager
 System.Reflection.Extensions
+System.Reactive
+System.Runtime.InteropServices.WindowsRuntime

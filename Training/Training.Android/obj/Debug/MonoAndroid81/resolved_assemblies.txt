@@ -1,4 +1,6 @@
 H:\PROJELERİM\XAMARİN\Training\Training\Training.Android\obj\Debug\MonoAndroid81\android\assets\Training.Android.dll
+H:\PROJELERİM\XAMARİN\Training\Training\Training.Android\obj\Debug\MonoAndroid81\android\assets\Acr.UserDialogs.dll
+H:\PROJELERİM\XAMARİN\Training\Training\Training.Android\obj\Debug\MonoAndroid81\android\assets\AndHUD.dll
 H:\PROJELERİM\XAMARİN\Training\Training\Training.Android\obj\Debug\MonoAndroid81\android\assets\FastAndroidCamera.dll
 H:\PROJELERİM\XAMARİN\Training\Training\Training.Android\obj\Debug\MonoAndroid81\android\assets\FormsViewGroup.dll
 H:\PROJELERİM\XAMARİN\Training\Training\Training.Android\obj\Debug\MonoAndroid81\android\assets\HtmlLabel.Forms.Plugin.dll
@@ -15,6 +17,9 @@ H:\PROJELERİM\XAMARİN\Training\Training\Training.Android\obj\Debug\MonoAndroid
 H:\PROJELERİM\XAMARİN\Training\Training\Training.Android\obj\Debug\MonoAndroid81\android\assets\Syncfusion.OfficeChart.Portable.dll
 H:\PROJELERİM\XAMARİN\Training\Training\Training.Android\obj\Debug\MonoAndroid81\android\assets\System.Core.dll
 H:\PROJELERİM\XAMARİN\Training\Training\Training.Android\obj\Debug\MonoAndroid81\android\assets\System.dll
+H:\PROJELERİM\XAMARİN\Training\Training\Training.Android\obj\Debug\MonoAndroid81\android\assets\System.IdentityModel.dll
+H:\PROJELERİM\XAMARİN\Training\Training\Training.Android\obj\Debug\MonoAndroid81\android\assets\System.Net.Http.dll
+H:\PROJELERİM\XAMARİN\Training\Training\Training.Android\obj\Debug\MonoAndroid81\android\assets\System.Runtime.Serialization.dll
 H:\PROJELERİM\XAMARİN\Training\Training\Training.Android\obj\Debug\MonoAndroid81\android\assets\System.Xml.dll
 H:\PROJELERİM\XAMARİN\Training\Training\Training.Android\obj\Debug\MonoAndroid81\android\assets\System.Xml.Linq.dll
 H:\PROJELERİM\XAMARİN\Training\Training\Training.Android\obj\Debug\MonoAndroid81\android\assets\Training.dll
@@ -67,9 +72,6 @@ H:\PROJELERİM\XAMARİN\Training\Training\Training.Android\obj\Debug\MonoAndroid
 H:\PROJELERİM\XAMARİN\Training\Training\Training.Android\obj\Debug\MonoAndroid81\android\assets\System.Runtime.InteropServices.dll
 H:\PROJELERİM\XAMARİN\Training\Training\Training.Android\obj\Debug\MonoAndroid81\android\assets\System.Runtime.Extensions.dll
 H:\PROJELERİM\XAMARİN\Training\Training\Training.Android\obj\Debug\MonoAndroid81\android\assets\System.Reflection.Extensions.dll
-H:\PROJELERİM\XAMARİN\Training\Training\Training.Android\obj\Debug\MonoAndroid81\android\assets\System.Net.Http.dll
-H:\PROJELERİM\XAMARİN\Training\Training\Training.Android\obj\Debug\MonoAndroid81\android\assets\System.Runtime.Serialization.dll
-H:\PROJELERİM\XAMARİN\Training\Training\Training.Android\obj\Debug\MonoAndroid81\android\assets\System.ServiceModel.Internals.dll
 H:\PROJELERİM\XAMARİN\Training\Training\Training.Android\obj\Debug\MonoAndroid81\android\assets\netstandard.dll
 H:\PROJELERİM\XAMARİN\Training\Training\Training.Android\obj\Debug\MonoAndroid81\android\assets\System.Data.dll
 H:\PROJELERİM\XAMARİN\Training\Training\Training.Android\obj\Debug\MonoAndroid81\android\assets\System.Numerics.dll
@@ -88,6 +90,10 @@ H:\PROJELERİM\XAMARİN\Training\Training\Training.Android\obj\Debug\MonoAndroid
 H:\PROJELERİM\XAMARİN\Training\Training\Training.Android\obj\Debug\MonoAndroid81\android\assets\System.Text.RegularExpressions.dll
 H:\PROJELERİM\XAMARİN\Training\Training\Training.Android\obj\Debug\MonoAndroid81\android\assets\System.Text.Encoding.dll
 H:\PROJELERİM\XAMARİN\Training\Training\Training.Android\obj\Debug\MonoAndroid81\android\assets\Mono.Security.dll
+H:\PROJELERİM\XAMARİN\Training\Training\Training.Android\obj\Debug\MonoAndroid81\android\assets\System.ServiceModel.Internals.dll
+H:\PROJELERİM\XAMARİN\Training\Training\Training.Android\obj\Debug\MonoAndroid81\android\assets\Firebase.dll
+H:\PROJELERİM\XAMARİN\Training\Training\Training.Android\obj\Debug\MonoAndroid81\android\assets\System.Reactive.dll
+H:\PROJELERİM\XAMARİN\Training\Training\Training.Android\obj\Debug\MonoAndroid81\android\assets\System.Runtime.InteropServices.WindowsRuntime.dll
 H:\PROJELERİM\XAMARİN\Training\Training\Training.Android\obj\Debug\MonoAndroid81\android\assets\System.Threading.Tasks.dll
 H:\PROJELERİM\XAMARİN\Training\Training\Training.Android\obj\Debug\MonoAndroid81\android\assets\System.IO.dll
 H:\PROJELERİM\XAMARİN\Training\Training\Training.Android\obj\Debug\MonoAndroid81\android\assets\System.Globalization.dll

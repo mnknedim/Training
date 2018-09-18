@@ -26,6 +26,7 @@ namespace Training.Droid
            
             this.Window.AddFlags(WindowManagerFlags.Fullscreen);
             global::Xamarin.Forms.Forms.Init(this, bundle);
+            Acr.UserDialogs.UserDialogs.Init(this);
            //z FormsVideoPlayer.Init();
             LoadApplication(new App());
         }

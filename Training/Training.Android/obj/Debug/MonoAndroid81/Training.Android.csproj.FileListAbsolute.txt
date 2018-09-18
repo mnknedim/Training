@@ -3,7 +3,10 @@ H:\PROJELERİM\XAMARİN\Training\Training\Training.Android\bin\Debug\Training.An
 H:\PROJELERİM\XAMARİN\Training\Training\Training.Android\bin\Debug\com.Training.Android.apk
 H:\PROJELERİM\XAMARİN\Training\Training\Training.Android\bin\Debug\com.Training.Android-Signed.apk
 H:\PROJELERİM\XAMARİN\Training\Training\Training.Android\bin\Debug\Training.dll
+H:\PROJELERİM\XAMARİN\Training\Training\Training.Android\bin\Debug\Firebase.dll
+H:\PROJELERİM\XAMARİN\Training\Training\Training.Android\bin\Debug\System.Reactive.dll
 H:\PROJELERİM\XAMARİN\Training\Training\Training.Android\bin\Debug\Training.pdb
+H:\PROJELERİM\XAMARİN\Training\Training\Training.Android\bin\Debug\System.Reactive.xml
 H:\PROJELERİM\XAMARİN\Training\Training\Training.Android\obj\Debug\MonoAndroid81\Training.Android.csprojAssemblyReference.cache
 H:\PROJELERİM\XAMARİN\Training\Training\Training.Android\obj\Debug\MonoAndroid81\XbdMerge\Xamarin.GooglePlayServices.Basement.dll.stamp
 H:\PROJELERİM\XAMARİN\Training\Training\Training.Android\obj\Debug\MonoAndroid81\XbdMerge\Xamarin.GooglePlayServices.Tasks.dll.stamp
@@ -54,6 +57,7 @@ H:\PROJELERİM\XAMARİN\Training\Training\Training.Android\bin\Debug\mscorlib.pd
 H:\PROJELERİM\XAMARİN\Training\Training\Training.Android\bin\Debug\System.ComponentModel.Composition.pdb
 H:\PROJELERİM\XAMARİN\Training\Training\Training.Android\bin\Debug\System.Core.pdb
 H:\PROJELERİM\XAMARİN\Training\Training\Training.Android\bin\Debug\System.Data.pdb
+H:\PROJELERİM\XAMARİN\Training\Training\Training.Android\bin\Debug\System.IdentityModel.pdb
 H:\PROJELERİM\XAMARİN\Training\Training\Training.Android\bin\Debug\System.IO.Compression.FileSystem.pdb
 H:\PROJELERİM\XAMARİN\Training\Training\Training.Android\bin\Debug\System.IO.Compression.pdb
 H:\PROJELERİM\XAMARİN\Training\Training\Training.Android\bin\Debug\System.Net.Http.pdb
@@ -73,15 +77,15 @@ H:\PROJELERİM\XAMARİN\Training\Training\Training.Android\obj\Debug\MonoAndroid
 H:\PROJELERİM\XAMARİN\Training\Training\Training.Android\obj\Debug\MonoAndroid81\linksrc\mscorlib.pdb
 H:\PROJELERİM\XAMARİN\Training\Training\Training.Android\obj\Debug\MonoAndroid81\linksrc\System.Core.pdb
 H:\PROJELERİM\XAMARİN\Training\Training\Training.Android\obj\Debug\MonoAndroid81\linksrc\System.pdb
+H:\PROJELERİM\XAMARİN\Training\Training\Training.Android\obj\Debug\MonoAndroid81\linksrc\System.IdentityModel.pdb
+H:\PROJELERİM\XAMARİN\Training\Training\Training.Android\obj\Debug\MonoAndroid81\linksrc\System.Net.Http.pdb
+H:\PROJELERİM\XAMARİN\Training\Training\Training.Android\obj\Debug\MonoAndroid81\linksrc\System.Runtime.Serialization.pdb
 H:\PROJELERİM\XAMARİN\Training\Training\Training.Android\obj\Debug\MonoAndroid81\linksrc\System.Xml.pdb
 H:\PROJELERİM\XAMARİN\Training\Training\Training.Android\obj\Debug\MonoAndroid81\linksrc\System.Xml.Linq.pdb
 H:\PROJELERİM\XAMARİN\Training\Training\Training.Android\obj\Debug\MonoAndroid81\linksrc\Training.pdb
 H:\PROJELERİM\XAMARİN\Training\Training\Training.Android\obj\Debug\MonoAndroid81\linksrc\Xamarin.Forms.Core.pdb
 H:\PROJELERİM\XAMARİN\Training\Training\Training.Android\obj\Debug\MonoAndroid81\linksrc\Xamarin.Forms.Xaml.pdb
 H:\PROJELERİM\XAMARİN\Training\Training\Training.Android\obj\Debug\MonoAndroid81\linksrc\System.ComponentModel.Composition.pdb
-H:\PROJELERİM\XAMARİN\Training\Training\Training.Android\obj\Debug\MonoAndroid81\linksrc\System.Net.Http.pdb
-H:\PROJELERİM\XAMARİN\Training\Training\Training.Android\obj\Debug\MonoAndroid81\linksrc\System.Runtime.Serialization.pdb
-H:\PROJELERİM\XAMARİN\Training\Training\Training.Android\obj\Debug\MonoAndroid81\linksrc\System.ServiceModel.Internals.pdb
 H:\PROJELERİM\XAMARİN\Training\Training\Training.Android\obj\Debug\MonoAndroid81\linksrc\System.Data.pdb
 H:\PROJELERİM\XAMARİN\Training\Training\Training.Android\obj\Debug\MonoAndroid81\linksrc\System.Numerics.pdb
 H:\PROJELERİM\XAMARİN\Training\Training\Training.Android\obj\Debug\MonoAndroid81\linksrc\System.Transactions.pdb
@@ -89,6 +93,7 @@ H:\PROJELERİM\XAMARİN\Training\Training\Training.Android\obj\Debug\MonoAndroid
 H:\PROJELERİM\XAMARİN\Training\Training\Training.Android\obj\Debug\MonoAndroid81\linksrc\System.IO.Compression.FileSystem.pdb
 H:\PROJELERİM\XAMARİN\Training\Training\Training.Android\obj\Debug\MonoAndroid81\linksrc\System.Web.Services.pdb
 H:\PROJELERİM\XAMARİN\Training\Training\Training.Android\obj\Debug\MonoAndroid81\linksrc\Mono.Security.pdb
+H:\PROJELERİM\XAMARİN\Training\Training\Training.Android\obj\Debug\MonoAndroid81\linksrc\System.ServiceModel.Internals.pdb
 H:\PROJELERİM\XAMARİN\Training\Training\Training.Android\obj\Debug\MonoAndroid81\linksrc\Training.Android.dll.mdb
 H:\PROJELERİM\XAMARİN\Training\Training\Training.Android\obj\Debug\MonoAndroid81\linksrc\FormsViewGroup.dll.mdb
 H:\PROJELERİM\XAMARİN\Training\Training\Training.Android\obj\Debug\MonoAndroid81\linksrc\Xamarin.Forms.Platform.Android.dll.mdb
@@ -102,6 +107,7 @@ H:\PROJELERİM\XAMARİN\Training\Training\Training.Android\obj\Debug\MonoAndroid
 H:\PROJELERİM\XAMARİN\Training\Training\Training.Android\obj\Debug\MonoAndroid81\android\assets\System.ComponentModel.Composition.pdb
 H:\PROJELERİM\XAMARİN\Training\Training\Training.Android\obj\Debug\MonoAndroid81\android\assets\System.Core.pdb
 H:\PROJELERİM\XAMARİN\Training\Training\Training.Android\obj\Debug\MonoAndroid81\android\assets\System.Data.pdb
+H:\PROJELERİM\XAMARİN\Training\Training\Training.Android\obj\Debug\MonoAndroid81\android\assets\System.IdentityModel.pdb
 H:\PROJELERİM\XAMARİN\Training\Training\Training.Android\obj\Debug\MonoAndroid81\android\assets\System.IO.Compression.FileSystem.pdb
 H:\PROJELERİM\XAMARİN\Training\Training\Training.Android\obj\Debug\MonoAndroid81\android\assets\System.IO.Compression.pdb
 H:\PROJELERİM\XAMARİN\Training\Training\Training.Android\obj\Debug\MonoAndroid81\android\assets\System.Net.Http.pdb
@@ -117,6 +123,7 @@ H:\PROJELERİM\XAMARİN\Training\Training\Training.Android\obj\Debug\MonoAndroid
 H:\PROJELERİM\XAMARİN\Training\Training\Training.Android\obj\Debug\MonoAndroid81\android\assets\Xamarin.Forms.Core.pdb
 H:\PROJELERİM\XAMARİN\Training\Training\Training.Android\obj\Debug\MonoAndroid81\android\assets\Xamarin.Forms.Xaml.pdb
 H:\PROJELERİM\XAMARİN\Training\Training\Training.Android\bin\Debug\Training.Android.dll
+H:\PROJELERİM\XAMARİN\Training\Training\Training.Android\obj\Debug\MonoAndroid81\linksrc\Training.pdb
 H:\PROJELERİM\XAMARİN\Training\Training\Training.Android\obj\Debug\MonoAndroid81\linksrc\Training.Android.dll.mdb
 H:\PROJELERİM\XAMARİN\Training\Training\Training.Android\obj\Debug\MonoAndroid81\linksrc\FormsViewGroup.dll.mdb
 H:\PROJELERİM\XAMARİN\Training\Training\Training.Android\obj\Debug\MonoAndroid81\linksrc\Xamarin.Forms.Platform.Android.dll.mdb

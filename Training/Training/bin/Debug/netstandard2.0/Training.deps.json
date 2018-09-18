@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETStandard,Version=v2.0/",
-    "signature": "7f523aa33843546ea7942bfde7b787024ced6e52"
+    "signature": "879fbcffa0071a8fe8941e61ab7fc803fd88fcba"
   },
   "compilationOptions": {},
   "targets": {
@@ -9,20 +9,31 @@
     ".NETStandard,Version=v2.0/": {
       "Training/1.0.0": {
         "dependencies": {
+          "Acr.UserDialogs": "7.0.1",
           "NETStandard.Library": "2.0.3",
           "Newtonsoft.Json": "11.0.2",
           "Octane.Xam.VideoPlayer": "2.2.0",
           "SkiaSharp": "1.60.3",
           "Syncfusion.Xamarin.DocIO": "16.2.0.50",
           "Xam.Plugin.HtmlLabel": "3.0.1.6",
-          "Xamarin.Forms": "3.2.0.729530-pre2",
+          "Xamarin.Forms": "3.2.0.809874-pre3",
           "ZXing.Net.Mobile": "2.4.1",
           "ZXing.Net.Mobile.Forms": "2.4.1",
+          "Firebase": "1.0.0.0",
           "System.Net.Http.Extensions": "2.2.29.0",
-          "System.Net.Http.Primitives": "4.2.29.0"
+          "System.Net.Http.Primitives": "4.2.29.0",
+          "System.Reactive": "4.0.0.0"
         },
         "runtime": {
           "Training.dll": {}
+        }
+      },
+      "Acr.UserDialogs/7.0.1": {
+        "runtime": {
+          "lib/netstandard2.0/Acr.UserDialogs.dll": {
+            "assemblyVersion": "0.0.0.0",
+            "fileVersion": "0.0.0.0"
+          }
         }
       },
       "Microsoft.NETCore.Platforms/1.1.0": {},
@@ -41,7 +52,7 @@
       },
       "Octane.Xam.VideoPlayer/2.2.0": {
         "dependencies": {
-          "Xamarin.Forms": "3.2.0.729530-pre2"
+          "Xamarin.Forms": "3.2.0.809874-pre3"
         },
         "runtime": {
           "lib/netstandard2.0/Octane.Xamarin.Forms.VideoPlayer.dll": {
@@ -97,7 +108,7 @@
       },
       "Xam.Plugin.HtmlLabel/3.0.1.6": {
         "dependencies": {
-          "Xamarin.Forms": "3.2.0.729530-pre2"
+          "Xamarin.Forms": "3.2.0.809874-pre3"
         },
         "runtime": {
           "lib/netstandard2.0/HtmlLabel.Forms.Plugin.dll": {
@@ -106,7 +117,7 @@
           }
         }
       },
-      "Xamarin.Forms/3.2.0.729530-pre2": {
+      "Xamarin.Forms/3.2.0.809874-pre3": {
         "runtime": {
           "lib/netstandard2.0/Xamarin.Forms.Core.dll": {
             "assemblyVersion": "2.0.0.0",
@@ -140,13 +151,21 @@
       },
       "ZXing.Net.Mobile.Forms/2.4.1": {
         "dependencies": {
-          "Xamarin.Forms": "3.2.0.729530-pre2",
+          "Xamarin.Forms": "3.2.0.809874-pre3",
           "ZXing.Net.Mobile": "2.4.1"
         },
         "runtime": {
           "lib/netstandard1.0/ZXing.Net.Mobile.Forms.dll": {
             "assemblyVersion": "2.4.1.0",
             "fileVersion": "2.4.1.0"
+          }
+        }
+      },
+      "Firebase/1.0.0.0": {
+        "runtime": {
+          "Firebase.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
           }
         }
       },
@@ -165,6 +184,14 @@
             "fileVersion": "4.2.29.0"
           }
         }
+      },
+      "System.Reactive/4.0.0.0": {
+        "runtime": {
+          "System.Reactive.dll": {
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "4.0.0.398"
+          }
+        }
       }
     }
   },
@@ -173,6 +200,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "Acr.UserDialogs/7.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-+eGbTgwaFPzcaRnMdnAK5pHA0eoeoxkhy80FNwGeewqvA+DM6fUPM9yMbrN2hw3rcuBaXd2ghy2Xq5XU7m8qkw==",
+      "path": "acr.userdialogs/7.0.1",
+      "hashPath": "acr.userdialogs.7.0.1.nupkg.sha512"
     },
     "Microsoft.NETCore.Platforms/1.1.0": {
       "type": "package",
@@ -244,12 +278,12 @@
       "path": "xam.plugin.htmllabel/3.0.1.6",
       "hashPath": "xam.plugin.htmllabel.3.0.1.6.nupkg.sha512"
     },
-    "Xamarin.Forms/3.2.0.729530-pre2": {
+    "Xamarin.Forms/3.2.0.809874-pre3": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-qSP/FC32sxFzq6e6/dQ8s35fvryxwoziSMvzy05ouBQTiETs2hTwvb7tn8UQmF5fRAcoT8jNQQdgMsgCjCedMw==",
-      "path": "xamarin.forms/3.2.0.729530-pre2",
-      "hashPath": "xamarin.forms.3.2.0.729530-pre2.nupkg.sha512"
+      "sha512": "sha512-wp3vSLE/buUaSKW4gSMXQqISjLzpWiS3g61kWhTLHAgErx30WpG/UiI7pLfwLsoksf79fTOyy/M11ClLbTcxHQ==",
+      "path": "xamarin.forms/3.2.0.809874-pre3",
+      "hashPath": "xamarin.forms.3.2.0.809874-pre3.nupkg.sha512"
     },
     "ZXing.Net.Mobile/2.4.1": {
       "type": "package",
@@ -265,12 +299,22 @@
       "path": "zxing.net.mobile.forms/2.4.1",
       "hashPath": "zxing.net.mobile.forms.2.4.1.nupkg.sha512"
     },
+    "Firebase/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
     "System.Net.Http.Extensions/2.2.29.0": {
       "type": "reference",
       "serviceable": false,
       "sha512": ""
     },
     "System.Net.Http.Primitives/4.2.29.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Reactive/4.0.0.0": {
       "type": "reference",
       "serviceable": false,
       "sha512": ""

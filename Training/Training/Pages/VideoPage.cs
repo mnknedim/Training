@@ -7,24 +7,31 @@ using Training.Ex;
 using Xamarin.Forms;
 using Octane.Xamarin.Forms.VideoPlayer.Constants;
 using Training.Components;
+using Firebase.Xamarin.Database;
+using Training.Model;
+using System.Threading.Tasks;
+using Acr.UserDialogs;
 
 namespace Training.Pages
 {
 	public class VideoPage : ContentPage
 	{
-		public VideoPage (string result)
+       
+        public VideoPage (VideoModel result)
 		{
+            UserDialogs.Instance.HideLoading();
             BackgroundColor = Color.FromHex("#0b87a8");
-            var BackGroundImage_ = new ImageUpload("arkaplan"); ;
+            var BackGroundImage_ = new ImageUpload("arkaplan");
 
+      
             VideoLayout = new StackLayout
             {
-               // BackgroundColor = Color.Blue,
+               
                 VerticalOptions = LayoutOptions.FillAndExpand,
                 Children = {
                     new VideoPlayer()
                     {
-                        Source = result,
+                        Source = result.Link,
                         AutoPlay = true,
                         FillMode = FillMode.ResizeAspectFill,
                     }
@@ -37,10 +44,10 @@ namespace Training.Pages
                 {
                     new ExLabel()
                     {
-                        Text = "13 - Gerund Infinitive Konu Anlatımı ve Pratik ",
+                        Text = "# " + result.Baslik,
                         FontSize = Device.GetNamedSize(NamedSize.Medium, typeof(ExLabel)),
                         TextColor = Color.White,
-                        VerticalTextAlignment = TextAlignment.End
+                        VerticalTextAlignment = TextAlignment.Center
                     }
                 }
             };
@@ -94,6 +101,8 @@ namespace Training.Pages
 
             Content = GridContent;
         }
+
+      
 
         StackLayout VideoLayout;
         ExStackLayout ExerciseLayout;

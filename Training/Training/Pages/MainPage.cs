@@ -1,10 +1,14 @@
-﻿using System;
+﻿using Acr.UserDialogs;
+using Firebase.Xamarin.Database;
+using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using Training.Components;
 using Training.Dependency;
 using Training.Ex;
+using Training.Model;
 using Training.Pages;
 using Xamarin.Forms;
 
@@ -28,7 +32,7 @@ namespace Training
             StFirst.Children.Add(UserPanel);
             StFirst.Children.Add(QrPanel);
 
-            var ListeningPanel = new ExButton("icon_music");
+            var ListeningPanel = new ExButton("icon_music") { TappedCommand = InsertFirebaseCommand };
             var ReadingPanel = new ExButton("icon_reading") { TappedCommand = ReadingCommand};
             var StSecond = new ExStackLayout();
             StSecond.Children.Add(ListeningPanel);
@@ -56,13 +60,27 @@ namespace Training
 
         public Command ScannerCommand = new Command(async () => {
 
+            UserDialogs.Instance.ShowLoading("Açılıyor...", MaskType.Black);
+
+            FirebaseClient firebase = new FirebaseClient("https://training-a4c28.firebaseio.com/");
+            VideoModel GelenVideo;
+            
             try
             {
                 var scanner = DependencyService.Get<IQrReaderService>();
                 var result = await scanner.ScannAsync();
+
+                var aa =(await firebase.Child("Videolar").OnceAsync<VideoModel>()).Where(s=>s.Object.Id == result).Single();
+                GelenVideo = new VideoModel
+                {
+                    Baslik = aa.Object.Baslik,
+                    Link = aa.Object.Link,
+                };
+
+
                 if (result != null)
                 {
-                    var page = new VideoPage(result);
+                    var page = new VideoPage(GelenVideo);
                     var Navi = App.Current.MainPage.Navigation;
                     await Navi.PushModalAsync(page);
                 }
@@ -84,6 +102,12 @@ namespace Training
 
         public Command UserCommand = new Command(async () => {
             var page = new RestTry();
+            var Navi = App.Current.MainPage.Navigation;
+            await Navi.PushModalAsync(page);
+        });
+
+        public Command InsertFirebaseCommand = new Command(async () => {
+            var page = new InsertVideo();
             var Navi = App.Current.MainPage.Navigation;
             await Navi.PushModalAsync(page);
         });

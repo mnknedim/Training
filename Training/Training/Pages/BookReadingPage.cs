@@ -1,13 +1,13 @@
-﻿using LabelHtml.Forms.Plugin.Abstractions;
+﻿using Acr.UserDialogs;
+using LabelHtml.Forms.Plugin.Abstractions;
 using Syncfusion.DocIO;
 using Syncfusion.DocIO.DLS;
-//using Syncfusion.DocIO;
-//using Syncfusion.DocIO.DLS;
 using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
 using System.Linq;
+using System.Net;
 using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Text;
@@ -20,99 +20,122 @@ using Xamarin.Forms;
 
 namespace Training.Pages
 {
-	public class BookReadingPage : ContentPage
-	{
+    public class BookReadingPage : ContentPage
+    {
         public string htmlString
         {
             get => (string)GetValue(htmlStringProperty);
             set => SetValue(htmlStringProperty, value);
         }
         public static readonly BindableProperty htmlStringProperty = BindableProperty.Create("HtmlView", typeof(string), typeof(BookReadingPage), default(string));
-      
-        FormattedString BookText = new FormattedString();
+       
+        public Command TapCommand
+        {
+            get => (Command)GetValue(TapCommandProperty);
+            set => SetValue(TapCommandProperty, value);
+        }
+        public static readonly BindableProperty TapCommandProperty = BindableProperty.Create("TapCommand", typeof(Command), typeof(BookReadingPage), default(Command));
 
-		public BookReadingPage ()
-		{
+        public FormattedString formatteds;
+
+        public StackLayout stLayout;
+        public BookReadingPage()
+        {
             BindingContext = this;
-            
+             formatteds = new FormattedString();
+
             Assembly assembly = typeof(BookReadingPage).GetTypeInfo().Assembly;
             Stream inputStream =
                 assembly.GetManifestResourceStream("Training.Templates.read.html");
             StreamReader reader = new StreamReader(inputStream);
             htmlString = reader.ReadToEnd();
 
-            var HtmlLabelText = new HtmlFormattedLabel() {
-                FontSize = Device.GetNamedSize(NamedSize.Medium,typeof(HtmlFormattedLabel))
-            };
-            HtmlLabelText.SetBinding(HtmlFormattedLabel.FormattedTextProperty, new Binding { Path ="htmlString", Converter = new HtmlLabelConverter()});
-
-            var st_layout = new StackLayout
+            var HtmlLabelText = new HtmlFormattedLabel()
             {
+                FontSize = Device.GetNamedSize(NamedSize.Large, typeof(HtmlFormattedLabel)),
+                FormattedText = Convert(htmlString)
+            };
+
+            stLayout = new StackLayout
+            {
+                Margin = new Thickness(10,0,0,0),
                 Children =
                 {
-                    HtmlLabelText
+                    HtmlLabelText,
                 }
             };
+            Content = new ScrollView {
 
-            Content = new ScrollView { Content = st_layout };
+                BackgroundColor = Color.Bisque,
+                Content = stLayout
+            };
+
+            formatteds = Convert(htmlString);
         }
 
-        public class HtmlLabelConverter : IValueConverter
+      
+
+        public FormattedString Convert(string value)
         {
-            public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
+            var HtmlLabelString = (String)value;
+
+            foreach (var item in HtmlLabelString.Split(' ','\n').ToList())
             {
-                var formatteds = new FormattedString();
-                var HtmlLabelString = (String)value;
-
-                foreach (var item in HtmlLabelString.Split(' ').ToList())
+                formatteds.Spans.Add(CreateSpan(new StringSection
                 {
-                    formatteds.Spans.Add(CreateSpan(new StringSection
-                    {
-                        Text = item,
-                        Link = item +" "+ formatteds.Spans.Count(),
-                    }));
-                }
-
-                return formatteds;
+                    Text = item,
+                    Link = item + " " + formatteds.Spans.Count() + ".",
+                }));
             }
 
+            return formatteds;
+        }
+
+    
+        private Span CreateSpan(StringSection section)
+        {
+            var ret = new Span
+            {
+                Text = section.Text + " ",
+                TextColor = Color.Black,
+            };
             
-
-            private Span CreateSpan(StringSection section)
+            ret.GestureRecognizers.Add(new TapGestureRecognizer()
             {
-                var span = new Span()
-                {
-                    Text = section.Text + " "
-                };
-
-                span.GestureRecognizers.Add(new TapGestureRecognizer()
-                {
-                    Command = _navigationCommand,
-                    CommandParameter = section.Link
-                });
-                span.TextColor = Color.Black;
-
-                return span;
-
-            }
-            public class StringSection
-            {
-                public string Text { get; set; }
-                public string Link { get; set; }
-            }
-
-            private ICommand _navigationCommand = new Command<string>((url) =>
-            {
-                var ClickedString = url.Substring(0, url.IndexOf(' '));
-                App.Current.MainPage.DisplayAlert("Tıklanan Kelime", ClickedString, "Tamam");
-               
+                Command = TapCommand,
+                CommandParameter = section.Link,
             });
 
-            public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
+            TapCommand = new Command<string>( (url) =>
             {
-                throw new NotImplementedException();
-            }
+
+                var webClient = new WebClient(){ Encoding = System.Text.Encoding.GetEncoding("ISO-8859-9")};
+                var ClickedString = url.Substring(0, url.IndexOf(' ')).Trim('.',',','!','?','"');
+                string res = String.Format("http://www.google.com/translate_t?hl=en&ie=UTF-8&text={0}&langpair={1}", ClickedString, "en|tr");
+                string result = webClient.DownloadString(res);
+
+                result = result.Substring(result.IndexOf("<span title=\"") + "<span title=\"".Length);
+                result = result.Substring(result.IndexOf(">") + 1);
+                result = result.Substring(0, result.IndexOf("</span>"));
+                
+                var sss = result.Trim();
+
+                App.Current.MainPage.DisplayAlert(ClickedString +" =" , sss, "OK");
+
+                stLayout.Children.Add(new Label { Text = ClickedString + " -> " + sss , FontSize = Device.GetNamedSize(NamedSize.Medium, typeof(Label))});
+
+            });
+
+            return ret;
         }
+
+
+        public class StringSection
+        {
+            public string Text { get; set; }
+            public string Link { get; set; }
+        }
+
     }
 }
 
